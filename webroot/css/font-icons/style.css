@@ -1,0 +1,364 @@
+@font-face {
+	font-family: 'ws-font';
+	src:url('fonts/ws-font.eot');
+	src:url('fonts/ws-font.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ws-font.woff') format('woff'),
+		url('fonts/ws-font.ttf') format('truetype'),
+		url('fonts/ws-font.svg#ws-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ws-font';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="ws-icon-"] {
+*/
+.ws-icon-relaxation, .ws-icon-volley, .ws-icon-velo, .ws-icon-ultimate, .ws-icon-tree, .ws-icon-tennis, .ws-icon-surf, .ws-icon-squash, .ws-icon-ski, .ws-icon-skate, .ws-icon-running, .ws-icon-rugby, .ws-icon-roller, .ws-icon-rando, .ws-icon-pingpong, .ws-icon-patin, .ws-icon-laser, .ws-icon-karting, .ws-icon-horse, .ws-icon-handball, .ws-icon-FootUS, .ws-icon-foot, .ws-icon-fitness, .ws-icon-circus, .ws-icon-bowls, .ws-icon-bmx, .ws-icon-billard, .ws-icon-basketball, .ws-icon-baseball, .ws-icon-badminton, .ws-icon-phone, .ws-icon-location, .ws-icon-location-2, .ws-icon-tags, .ws-icon-tag, .ws-icon-alarm, .ws-icon-stopwatch, .ws-icon-calendar, .ws-icon-compass, .ws-icon-map, .ws-icon-map-2, .ws-icon-calendar-2, .ws-icon-bubble, .ws-icon-bubbles, .ws-icon-bubbles-2, .ws-icon-bubble-2, .ws-icon-bubbles-3, .ws-icon-bubbles-4, .ws-icon-user, .ws-icon-users, .ws-icon-thumbs-up, .ws-icon-heart, .ws-icon-heart-2, .ws-icon-star, .ws-icon-star-2, .ws-icon-happy, .ws-icon-happy-2, .ws-icon-smiley, .ws-icon-smiley-2, .ws-icon-thumbs-up-2, .ws-icon-loupe, .ws-icon-paintball, .ws-icon-flying, .ws-icon-swimming, .ws-icon-busy, .ws-icon-neutral, .ws-icon-smiley-3, .ws-icon-menu, .ws-icon-cog, .ws-icon-exit, .ws-icon-lightning, .ws-icon-envelop, .ws-icon-library, .ws-icon-book, .ws-icon-pacman, .ws-icon-enter, .ws-icon-quill, .ws-icon-home, .ws-icon-blocked, .ws-icon-cancel-circle, .ws-icon-checkmark-circle, .ws-icon-spam, .ws-icon-close, .ws-icon-checkmark, .ws-icon-checkmark-2, .ws-icon-info, .ws-icon-info-2, .ws-icon-arrow-left, .ws-icon-arrow-right, .ws-icon-arrow-up, .ws-icon-arrow-down, .ws-icon-loop, .ws-icon-office, .ws-icon-martial-art, .ws-icon-target, .ws-icon-fighting, .ws-icon-athle, .ws-icon-danse, .ws-icon-gym, .ws-icon-climbing, .ws-icon-voile, .ws-icon-bowling, .ws-icon-board-games, .ws-icon-video-games, .ws-icon-golf, .ws-icon-kayak, .ws-icon-plus-alt, .ws-icon-hockey {
+	font-family: 'ws-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.ws-icon-relaxation:before {
+	content: "\22";
+}
+.ws-icon-volley:before {
+	content: "\23";
+}
+.ws-icon-velo:before {
+	content: "\24";
+}
+.ws-icon-ultimate:before {
+	content: "\25";
+}
+.ws-icon-tree:before {
+	content: "\26";
+}
+.ws-icon-tennis:before {
+	content: "\27";
+}
+.ws-icon-surf:before {
+	content: "\28";
+}
+.ws-icon-squash:before {
+	content: "\29";
+}
+.ws-icon-ski:before {
+	content: "\2a";
+}
+.ws-icon-skate:before {
+	content: "\2b";
+}
+.ws-icon-running:before {
+	content: "\2c";
+}
+.ws-icon-rugby:before {
+	content: "\2d";
+}
+.ws-icon-roller:before {
+	content: "\2e";
+}
+.ws-icon-rando:before {
+	content: "\2f";
+}
+.ws-icon-pingpong:before {
+	content: "\30";
+}
+.ws-icon-patin:before {
+	content: "\31";
+}
+.ws-icon-laser:before {
+	content: "\33";
+}
+.ws-icon-karting:before {
+	content: "\35";
+}
+.ws-icon-horse:before {
+	content: "\36";
+}
+.ws-icon-handball:before {
+	content: "\37";
+}
+.ws-icon-FootUS:before {
+	content: "\39";
+}
+.ws-icon-foot:before {
+	content: "\3a";
+}
+.ws-icon-fitness:before {
+	content: "\3b";
+}
+.ws-icon-circus:before {
+	content: "\3d";
+}
+.ws-icon-bowls:before {
+	content: "\3e";
+}
+.ws-icon-bmx:before {
+	content: "\40";
+}
+.ws-icon-billard:before {
+	content: "\41";
+}
+.ws-icon-basketball:before {
+	content: "\42";
+}
+.ws-icon-baseball:before {
+	content: "\43";
+}
+.ws-icon-badminton:before {
+	content: "\44";
+}
+.ws-icon-phone:before {
+	content: "\45";
+}
+.ws-icon-location:before {
+	content: "\46";
+}
+.ws-icon-location-2:before {
+	content: "\47";
+}
+.ws-icon-tags:before {
+	content: "\48";
+}
+.ws-icon-tag:before {
+	content: "\49";
+}
+.ws-icon-alarm:before {
+	content: "\4a";
+}
+.ws-icon-stopwatch:before {
+	content: "\4b";
+}
+.ws-icon-calendar:before {
+	content: "\4c";
+}
+.ws-icon-compass:before {
+	content: "\4d";
+}
+.ws-icon-map:before {
+	content: "\4e";
+}
+.ws-icon-map-2:before {
+	content: "\4f";
+}
+.ws-icon-calendar-2:before {
+	content: "\50";
+}
+.ws-icon-bubble:before {
+	content: "\51";
+}
+.ws-icon-bubbles:before {
+	content: "\52";
+}
+.ws-icon-bubbles-2:before {
+	content: "\53";
+}
+.ws-icon-bubble-2:before {
+	content: "\54";
+}
+.ws-icon-bubbles-3:before {
+	content: "\55";
+}
+.ws-icon-bubbles-4:before {
+	content: "\56";
+}
+.ws-icon-user:before {
+	content: "\57";
+}
+.ws-icon-users:before {
+	content: "\58";
+}
+.ws-icon-thumbs-up:before {
+	content: "\59";
+}
+.ws-icon-heart:before {
+	content: "\5a";
+}
+.ws-icon-heart-2:before {
+	content: "\5b";
+}
+.ws-icon-star:before {
+	content: "\5c";
+}
+.ws-icon-star-2:before {
+	content: "\5d";
+}
+.ws-icon-happy:before {
+	content: "\5e";
+}
+.ws-icon-happy-2:before {
+	content: "\5f";
+}
+.ws-icon-smiley:before {
+	content: "\60";
+}
+.ws-icon-smiley-2:before {
+	content: "\61";
+}
+.ws-icon-thumbs-up-2:before {
+	content: "\62";
+}
+.ws-icon-loupe:before {
+	content: "\64";
+}
+.ws-icon-paintball:before {
+	content: "\21";
+}
+.ws-icon-flying:before {
+	content: "\e000";
+}
+.ws-icon-swimming:before {
+	content: "\e003";
+}
+.ws-icon-busy:before {
+	content: "\e004";
+}
+.ws-icon-neutral:before {
+	content: "\e005";
+}
+.ws-icon-smiley-3:before {
+	content: "\e006";
+}
+.ws-icon-menu:before {
+	content: "\e007";
+}
+.ws-icon-cog:before {
+	content: "\e008";
+}
+.ws-icon-exit:before {
+	content: "\e009";
+}
+.ws-icon-lightning:before {
+	content: "\e00a";
+}
+.ws-icon-envelop:before {
+	content: "\e00b";
+}
+.ws-icon-library:before {
+	content: "\e00c";
+}
+.ws-icon-book:before {
+	content: "\e00d";
+}
+.ws-icon-pacman:before {
+	content: "\e00e";
+}
+.ws-icon-enter:before {
+	content: "\e00f";
+}
+.ws-icon-quill:before {
+	content: "\e010";
+}
+.ws-icon-home:before {
+	content: "\e011";
+}
+.ws-icon-blocked:before {
+	content: "\e012";
+}
+.ws-icon-cancel-circle:before {
+	content: "\e013";
+}
+.ws-icon-checkmark-circle:before {
+	content: "\e014";
+}
+.ws-icon-spam:before {
+	content: "\e015";
+}
+.ws-icon-close:before {
+	content: "\e016";
+}
+.ws-icon-checkmark:before {
+	content: "\e017";
+}
+.ws-icon-checkmark-2:before {
+	content: "\e018";
+}
+.ws-icon-info:before {
+	content: "\e019";
+}
+.ws-icon-info-2:before {
+	content: "\e01a";
+}
+.ws-icon-arrow-left:before {
+	content: "\e01b";
+}
+.ws-icon-arrow-right:before {
+	content: "\e01c";
+}
+.ws-icon-arrow-up:before {
+	content: "\e01d";
+}
+.ws-icon-arrow-down:before {
+	content: "\e01e";
+}
+.ws-icon-loop:before {
+	content: "\e01f";
+}
+.ws-icon-office:before {
+	content: "\e020";
+}
+.ws-icon-martial-art:before {
+	content: "\e021";
+}
+.ws-icon-target:before {
+	content: "\e022";
+}
+.ws-icon-fighting:before {
+	content: "\e001";
+}
+.ws-icon-athle:before {
+	content: "\e023";
+}
+.ws-icon-danse:before {
+	content: "\e024";
+}
+.ws-icon-gym:before {
+	content: "\e025";
+}
+.ws-icon-climbing:before {
+	content: "\e002";
+}
+.ws-icon-voile:before {
+	content: "\e026";
+}
+.ws-icon-bowling:before {
+	content: "\e027";
+}
+.ws-icon-board-games:before {
+	content: "\e028";
+}
+.ws-icon-video-games:before {
+	content: "\e029";
+}
+.ws-icon-golf:before {
+	content: "\e02a";
+}
+.ws-icon-kayak:before {
+	content: "\e02b";
+}
+.ws-icon-plus-alt:before {
+	content: "\63";
+}
+.ws-icon-hockey:before {
+	content: "\32";
+}
