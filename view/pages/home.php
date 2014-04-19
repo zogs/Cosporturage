@@ -1,5 +1,5 @@
 <div class="homepage">
-	<h1>Wesport ! Faire du sport dans votre ville !</h1>
+	<h1>Cosporturage.fr Faites du sport dans votre ville !</h1>
 
 	<div class="row-fluid">
 		<?php echo $this->session->flash() ;?>
@@ -153,11 +153,11 @@
 <?php if(isset($display_demo) && $display_demo == true): ?>
 <!-- DEMO TOUR :: http://ryanfunduk.com/jquery-tourbus/ -->
 <div class="tour-overlay"></div>
-<ol class='tourbus-legs' id='wesport-demo'>
-  <li data-el='#weSportBrand' data-orientation='bottom' data-width='500' data-arrow='20%' data-margin='20' data-align="left">
-    <h2>Bienvenue sur <img src="<?php echo Router::webroot('img/BRAND.png');?>"></h2>
+<ol class='tourbus-legs' id='demo-tour'>
+  <li data-el='#sitebrand' data-orientation='bottom' data-width='500' data-arrow='20%' data-margin='20' data-align="left">
+    <h2>Bienvenue sur <img src="<?php echo Router::webroot('img/BRAND.png');?>" style="width:200px"></h2>
     <p>
-    	<strong>We-Sport c'est l'agenda des activités sportives de ta ville&nbsp;!</strong>
+    	<strong>Cosporturage.fr c'est l'agenda des activités sportives de ta ville&nbsp;!</strong>
 		<br><small><i>Pour ne plus jamais jouer seul au Jokari</i></small>
     </p>
     <a href='javascript:void(0);' class='btn btn-info tourbus-next fright' rel="nofollow"><i class="icon icon-play icon-white"></i> Comment ça marche?</a>
@@ -213,7 +213,7 @@
   <li data-el="#contact" data-orientation="top" date-width='400' data-align="center" data-margin='15'>
   	<h2>Nous avons besoin de gens !</h2>  	
   	<p><strong>Soyez sympa, donnez-nous votre avis, vos idées, ...</strong></p>
-  	<p>We-Sport est encore jeune et nous avons besoin de testeurs ! <small>( et bientôt de modérateur, d'ambassadeur, ... )</small></p>
+  	<p>Cosporturage.fr est encore jeune et nous avons besoin de testeurs ! <small>( et bientôt de modérateur, d'ambassadeur, ... )</small></p>
 
   	<a href="<?php echo Router::url('pages/contact');?>" class="btn btn-success" rel="nofollow"><span class="ws-icon ws-icon-happy"></span> Contactez-nous !</a>
 	<a href="<?php echo Router::url('users/register');?>" class="btn btn-link" rel="nofollow"><i class="icon icon-ok"></i> S'inscrire ! </a>
@@ -812,13 +812,13 @@ $(document).ready(function(){
 
 	//Demo Tourbus
 	if(
-		$('#wesport-demo').length!=0 // if a demo tour is present on the DOM
+		$('#demo-tour').length!=0 // if a demo tour is present on the DOM
 		&& $('body').attr('data-user_id')==0 // and if no user is log
 		&& $('body').attr('data-display-demo')==1 //and if the cookie settings are ok
 		&& $(window).width()>=768) // and if the screen is large enougth
 	{
 		//Init the demo tour
-		var demo = $('#wesport-demo').tourbus({
+		var demo = $('#demo-tour').tourbus({
 			leg:{scrollto:0},
 			onLegStart: function( leg, bus ) {
 			    if( leg.rawData.highlight ) {

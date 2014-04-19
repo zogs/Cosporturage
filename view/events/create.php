@@ -132,7 +132,7 @@
 								L'activité est <strong>confirmé</strong> quand le nombre minimum attendu <strong>est atteint</strong>. <small>Les participants recoivent un email confirmant que l'activité a bien lieu.</small>
 							</li>
 							<li>
-								L'adresse et le téléphone ne sont <strong>visible que par</strong> les membres We-Sport inscrits.
+								L'adresse et le téléphone ne sont <strong>visible que par</strong> les membres Cosporturage inscrits.
 							</li>
 							<li>
 								Tous les champs sont <strong>obligatoires</strong>, sauf le téléphone.

@@ -29,8 +29,8 @@ CKEDITOR.editorConfig = function( config ) {
 		['oembed','MediaEmbed']
 	];
 
-	config.baseUrl = "http://we-sport.fr/";
-	config.baseDir = "D:\wamp\www\weSport\webroot";
+	config.baseUrl = "http://cosporturage.fr/";
+	config.baseDir = "D:\wamp\www\Cosporturage\webroot";
 	config.enterMod = 'ENTER_BR';
 
 

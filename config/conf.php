@@ -8,21 +8,19 @@ class Conf {
 	static $emailsAdmins = array(
 								'guichardsim@gmail.com',
 								'pierresimon.gossot@gmail.com',
-								'contact@we-sport.fr'
 								);
 
 	//Website information
-	static $website = 'we-Sport';
-	static $websiteURL = 'wesport.zogs.org';
+	static $website = 'Cosporturage';
+	static $websiteURL = 'cosporturage.fr';
 	static $websiteURLs = array(
-		'localwesport'=>'http://localwesport.fr',
-		'zogs'=>'http://wesport.zogs.org',
-		'we-sport' => 'http://we-sport.fr',
-		'default' => 'http://we-sport.fr'
+		'localcosporturage.fr'=>'http://localcosporturage.fr',
+		'cosporturage' => 'http://cosporturage.fr',
+		'default' => 'http://cosporturage.fr'
 		);
 	static $parsed_url;
-	static $websiteDOT = 'we-sport.fr';
-	static $contactEmail = 'contact@we-sport.fr';
+	static $websiteDOT = 'cosporturage.fr';
+	static $contactEmail = 'contact@cosporturage.fr';
 	static $debugIpAddress = array('127.0.0.1','193.52.250.230','88.162.98.17','80.119.95.169');
 	static $debugErrorEmails = array('guichardsim@gmail.com');
 	static $mailer = null;
@@ -42,19 +40,13 @@ class Conf {
 			'login'    => 'root',
 			'password' => ''
 			),
-		'zogs' =>array(
-			'host'     => 'localhost',
-			'database' => 'wesport',
-			'login'    => 'root',
-			'password' => 'XSgvEPbG'
-			),
-		'we-sport' => array(
+		'cosporturage' => array(
 			'host'    => 'localhost',
 			'database'=> 'wesport',
 			'login'   => 'root',
 			'password'=> 'XSgvEPbG'
 			),
-		'localwesport' => array(
+		'localcosporturage' => array(
 			'host'    => 'localhost',
 			'database'=> 'wesport',
 			'login'   => 'root',
@@ -75,9 +67,8 @@ class Conf {
 
 	//Cache directory ( from /webroot )
 	static $cacheDirectory = array( 
-		'localwesport' => 'cache',
-		'zogs' => 'cache',
-		'we-sport' => 'cache',
+		'localcosporturage' => 'cache',
+		'cosporturage' => 'cache',
 		'default' => 'cache'
 		);
 

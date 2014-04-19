@@ -13,9 +13,9 @@
 
         <div class="navbar-ws navbar navbar-fixed-top">            
                 <ul class="nav">
-                        <li><a class="weSport" id="weSportBrand" href="<?php echo Router::url('admin/');?>" title="Du Sport ! Vite !">
+                        <li><a id="sitebrand" href="<?php echo Router::url('admin/');?>" title="Du Sport ! Vite !">
                                 <img class="logo" src="<?php echo Router::webroot('img/LOGO.gif');?>" alt="Logo">                           
-                                <img class="wesport" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="WeSport.fr">                     
+                                <img class="typo" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="Cosporturage.fr">                     
                         </a>
                         </li>
                         <li><a href="<?php echo Router::url('/'); ?>"><span class="ws-icon-home"></span> Site</a></li>                             

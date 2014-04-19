@@ -23,10 +23,7 @@ class PagesController extends Controller {
 
 				$this->cookieEventSearch->write($cookie);
 			}
-			else{
-				
-				$this->redirect('http://we-sport.fr');
-			}
+			
 		}
 
 		public function home( $day = null ){					
@@ -130,9 +127,9 @@ class PagesController extends Controller {
 							$d['sports_available_txt'] .= $s->name.', ';
 			}			
 			
-			$d['title_for_layout'] = "We-Sport - Agenda et rencontres sportives - pour faire du sport dans sa ville -";
-			$d['description_for_layout'] = "We-Sport est un agenda des activités sportives dans ta ville. Venez découvrir les associations, les amateurs, et les professionels du sport autour de chez vous ! Découvrez de nouvelles activités, pratiquez librement, et faites de nouvelles rencontres autour du sport !";
-			$d['keywords_for_layout'] = "We-sport, Wesport, Sport, Ville, Activités sportives, Agenda, Calendrier, ".$d['sports_available_txt'];
+			$d['title_for_layout'] = "Cosporturage.fr - Le site pour faire du sport dans sa ville -";
+			$d['description_for_layout'] = "Cosporturage.fr est un agenda des activités sportives dans ta ville. Organisez et découvrez les gens, les associations, les professionels qui font du sport autour de chez vous ! ";
+			$d['keywords_for_layout'] = "Cosporturage, Co-sporturage, Sport, Groupe, Ville, Activités sportives, Agenda, Calendrier, ".$d['sports_available_txt'];
 			
 			$this->set($d);
 

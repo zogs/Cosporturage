@@ -109,7 +109,7 @@
 					<div class="block-content">
 						<script type="text/javascript"><!--
 							google_ad_client = "ca-pub-5083969946680628";
-							/* WeSport big rectangle */
+							/*  big rectangle */
 							google_ad_slot = "1932113308";
 							google_ad_width = 336;
 							google_ad_height = 280;

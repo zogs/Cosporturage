@@ -46,7 +46,7 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
 	<meta http-equip="cache-control" content="no-cache">
 	<link rel="icon" type="image/png" href="<?php echo Router::webroot('img/LOGO.gif');?>">
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo Router::webroot('img/wesport.ico');?>">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo Router::webroot('img/cosporturage.ico');?>">
 	<?php $this->loadCSS();?>
 	<?php $this->loadJS();?>	
 	
@@ -59,9 +59,9 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 			<div class="mobileMenus" id="mobileMenus">
 				<div class="mobileHead">
 					<a href="#mobMenuLeft"><span class="ws-icon-menu"></span></a>
-					<a class="weSport" href="<?php echo Router::url('');?>" title="Du Sport ! Vite !">
+					<a href="<?php echo Router::url('');?>" title="Du Sport ! Vite !">
 			      			<img class="logo" src="<?php echo Router::webroot('img/LOGO.gif');?>" alt="Logo">				      	  	
-			      			<img class="wesport" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="WeSport.fr">
+			      			<img class="typo" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="Cosporturage.fr">
 					</a>					
 					<a href="#mobMenuRight"><span class="ws-icon-home"></span></a>
 												
@@ -107,9 +107,9 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 			<div class="desktop-menu" id="desktop-menu">
 				<ul class="nav">
 					<li>
-						<a class="weSport" id="weSportBrand" href="<?php echo Router::url('');?>" title="Du Sport ! Vite !">
+						<a id="sitebrand" href="<?php echo Router::url('');?>" title="Du Sport ! Vite !">
 				      			<img class="logo" src="<?php echo Router::webroot('img/LOGO.gif');?>" alt="Logo">				      	  	
-		      					<img class="wesport" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="WeSport.fr">			      	  	
+		      					<img class="typo" src="<?php echo Router::webroot('img/BRAND.png');?>" alt="Cosporturage.fr">			      	  	
 						</a>
 					</li>
 					<li class="searchbar" id="menu-searchbar">
@@ -226,72 +226,7 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 				<?php endif; ?>													
 			</div>				
 		</div>
-
-
-		<div style="display:none" class="navbar navbar-fixed-top">
-
-
-				
-
-				<div class="desktopMenus">
-
-					<ul class="nav">
-						<li>
-							<a class="weSport" href="<?php echo Router::url('');?>" title="Du Sport ! Vite !">
-				      			<img src="<?php echo Router::webroot('img/LOGO.gif');?>" alt="">
-					      	  	<i>we</i><strong>Sport</strong>
-							</a>
-						</li>
-						<?php 
-							reset($menu);
-							foreach ($menu as $page):
-						 ?>
-						 <li>
-						 	<a href="<?php echo Router::url($page->slug);?>" class="<?php echo ($page->isCurrentPage($this->request))? 'currentPage':'';?>"><?php echo $page->title;?></a>
-						 </li>
-						<?php endforeach;
-
-						//Admin section button
-						if($this->session->user()->getRole()=='admin'):?>
-						<li>
-							<a href="<?php echo Router::url('admin/pages/home');?>"><span class="ws-icon-pacman"></span></a>
-						</li>
-						<?php endif;
-						
-						?>			
-					</ul>
-
-					<ul class="nav pull-right" id="registerMenu">
-						<?php if ($this->session->user()->isLog()): ?>
-							<li><a href="<?php echo Router::url('users/account');?>">
-									<img class="nav-avatar" src="<?php echo $this->session->user()->getAvatar(); ?>" />	
-									<span class="nav-login"><?php echo $this->session->user()->getLogin(); ?></span>
-							</a></li>
-							<li class="dropdown">				
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="<?php echo Router::url('users/account'); ?>">Mon Compte</a></li>						
-									<li class="divider"></li>
-									<li><a href="<?php echo Router::url('users/logout'); ?>">Déconnexion</a></li>
-								</ul>
-							</li>
-						<?php else: ?>
-							<form class="loginForm" action="<?php echo Router::url('users/login'); ?>" method='post'>
-								<input type="login" name="login" required="required" placeholder="Login or email" autofocus="autofocus" value="admin"/>
-								<input type="password" name="password" required="required" placeholder="Password" value="fatboy" />
-								<input type="hidden" name="token" value="<?php echo $this->session->token();?>" />
-								<input type="submit" value="OK" />
-							</form>
-							<li><a href="<?php echo Router::url('users/login');?>">Connexion</a></li>	
-							<li><a href="<?php echo Router::url('users/register');?>" >Inscription</a></li>
-						<?php endif ?>
-					</ul>					
-				</div>
-
-				
-		</div>
+		
 
 		<div class="container-fluid mainContainer">	
 			<?php echo $content_for_layout;?>
@@ -314,12 +249,12 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 					<?php
 					foreach (Conf::$villes as $sub => $ville): 
 					?>	
-						<li><a href="http://<?php echo $sub;?>.we-sport.fr"><?php echo $ville['name'];?></a></li>
+						<li><a href="http://<?php echo $sub;?>.cosporturage.fr"><?php echo $ville['name'];?></a></li>
 					<?php
 					endforeach;
 					?>
 				</ul>
-				<div class="copyright">2013 © weSport</div>
+				<div class="copyright">2013 © Cosporturage.fr</div>
 			</div>
 		</div>
 

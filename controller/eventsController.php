@@ -336,9 +336,9 @@ class EventsController extends Controller{
 		//debug($event);
 
 		//titre de la page
-		$d['title_for_layout'] = 'weSport - '.$event->getSportName().' à '.$event->getCityName().' le '.$event->getDate($this->getLang());
-		$d['description_for_layout'] = $event->author->getLogin().' organise un match de '.$event->getSportName().' près de la ville de '.$event->getCityName().' le '.$event->getDate($this->getLang()).' - via Wesport - '.$event->getTitle();
-		$d['keywords_for_layout'] = 'Sport : '.$event->getSportName();
+		$d['title_for_layout'] = $event->getSportName().' à '.$event->getCityName().' le '.$event->getDate($this->getLang());
+		$d['description_for_layout'] = $event->author->getLogin().' organise un match de '.$event->getSportName().' près de la ville de '.$event->getCityName().' le '.$event->getDate($this->getLang()).' - via Cosporturage.fr - '.$event->getTitle();
+		$d['keywords_for_layout'] = 'Cosporturage, Sport : '.$event->getSportName();
 		$d['event'] = $event;
 		$this->set($d);
 

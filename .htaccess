@@ -51,7 +51,7 @@ RewriteRule (.*) - [F]
 RewriteEngine On
 RewriteCond %{REQUEST_URI} .*((php|my)?shell|remview.*|phpremoteview.*|sshphp.*|pcom|nstview.*|c99|r57|webadmin.*|phpget.*|phpwriter.*|fileditor.*|locus7.*|storm7.*)\.(p?s?x?htm?l?|txt|aspx?|cfml?|cgi|pl|php[3-9]{0,1}|jsp?|sql|xml) [NC,OR]
 RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
-RewriteCond %{QUERY_STRING} ^(.*)=/home/zogs/www/we-sport.fr/httpdocs/(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^(.*)=/home/zogs/www/cosporturage.fr/httpdocs/(.*)$ [OR]
 RewriteCond %{QUERY_STRING} ^work_dir=.*$ [OR]
 RewriteCond %{QUERY_STRING} ^command=.*&output.*$ [OR]
 RewriteCond %{QUERY_STRING} ^nts_[a-z0-9_]{0,10}=.*$ [OR]

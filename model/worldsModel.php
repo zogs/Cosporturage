@@ -11,8 +11,8 @@ class WorldsModel extends Model
 
 		//Cache for location system
  		$this->cacheLocation = new Cache(Conf::getCachePath().'/location',10080); //(60*24*7));
-		//cache for cluster of wesporter location
-		$this->cacheWesporterLocation = new Cache(Conf::getCachePath().'/users_location',1440); //one day
+		//cache for cluster of location
+		$this->cacheUserLocation = new Cache(Conf::getCachePath().'/users_location',1440); //one day
 
 
 
@@ -293,11 +293,11 @@ class WorldsModel extends Model
  	}
 
 
- 	public function clusterOfWesportersCities($title,$location,$users){
+ 	public function clusterOfUserCities($title,$location,$users){
 
  		$path = $this->path_location($location,'.kml');
 
- 		if($this->cacheWesporterLocation->read($path)){
+ 		if($this->cacheUserLocation->read($path)){
  				
  				return Conf::getCachePath().'/users_location/'.$path;
  		}
@@ -336,7 +336,7 @@ class WorldsModel extends Model
 				</kml>
 				";
 
-		$this->cacheWesporterLocation->write($path,$xml);
+		$this->cacheUserLocation->write($path,$xml);
 
 		return Conf::getCachePath().'/users_location/'.$path;		
  	}

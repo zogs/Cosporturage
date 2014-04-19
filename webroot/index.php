@@ -10,7 +10,6 @@ ini_set('display_errors','1');
 //star timer
 //$debut = microtime(true);
 
-
 //Constant
 define('DEBUG',2);
 define('WEBROOT',dirname(__FILE__));

@@ -60,7 +60,7 @@ class UsersController extends Controller{
 						//redirection
 						// redirect to the previous location if the user use the login page
 						if(!empty($data->previous_url)){	
-							//if the previous page is a wesport page						
+							//if the previous page is a same site page						
 							if(strpos($data->previous_url,Conf::getSiteUrl())===0) {
 								//if it is not a /users/ page 				
 								if(strpos($data->previous_url,'/users/')==0){
@@ -176,7 +176,7 @@ class UsersController extends Controller{
 		$gmap->setZoom(6);
 		//$gmap->addKML('../googlemap/kml/Locator3RF.kml','radars_fixes','../googlemap/Locator3RF.png');
 		if(!empty($users)){
-			$path_to_kml = $this->Worlds->clusterOfWesportersCities('Wesporters Cities',$codes,$all_users);
+			$path_to_kml = $this->Worlds->clusterOfUserCities('User Cities',$codes,$all_users);
 			$gmap->addKML($path_to_kml,'Sportifs','../webroot/img/LOGO.gif');
 		}
 		$gmap->generate();
