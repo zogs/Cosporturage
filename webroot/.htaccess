@@ -1,0 +1,13 @@
+#<Files cron.php>
+#order deny,allow
+#deny from all
+#</Files> 
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^/favicon.ico$ [OR]
+
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+

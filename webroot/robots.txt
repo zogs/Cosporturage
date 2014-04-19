@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /cache/ /fl /media /scss /js /bootstrap /bootstrap_old
