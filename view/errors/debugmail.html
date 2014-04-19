@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <base href="{site}" />
+    <title>Error {site}</title>
+</head>
+    <body>
+    	<p>
+    		<strong>Site:</strong>{site}
+    		<br>
+    		<strong>Date:</strong>{date}
+            <br>
+            <strong>Uri:</strong>{uri}
+            <br>
+            <strong>User-agent:</strong>{useragent}
+            <br>
+            <strong>Post:</strong>{post}
+    	</p>
+       <p>
+			<span style="color:grey;font-size:small">Erreur {code}</span>
+			<h3>{msg}</h3>
+			<br />
+			<h4><span>{file}</span>  <span style="color:blue">line {line}</span></h4>
+			<br />
+		</p>
+
+		<p></p>
+		<pre>{context}</pre>        
+   
+        <p>&nbsp;</p>
+    </body>
+</html>
