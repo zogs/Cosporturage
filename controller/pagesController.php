@@ -129,7 +129,7 @@ class PagesController extends Controller {
 			
 			$d['title_for_layout'] = "Cosporturage.fr - Le site pour faire du sport dans sa ville -";
 			$d['description_for_layout'] = "Cosporturage.fr est un agenda des activités sportives dans ta ville. Organisez et découvrez les gens, les associations, les professionels qui font du sport autour de chez vous ! ";
-			$d['keywords_for_layout'] = "Cosporturage, Co-sporturage, Sport, Groupe, Ville, Activités sportives, Agenda, Calendrier, ".$d['sports_available_txt'];
+			$d['keywords_for_layout'] = "Cosporturage, Co-sporturage, Cosportage, Sport, Groupe, Ville, Activités sportives, Agenda, Calendrier, ".$d['sports_available_txt'];
 			
 			$this->set($d);
 
