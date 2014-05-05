@@ -302,8 +302,9 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-42468932-1', 'we-sport.fr');
+	  ga('create', 'UA-50666462-1', 'cosporturage.fr');
 	  ga('send', 'pageview');
+
 
 	  //prevent GA bounce event after 10s
 	  setTimeout(function(){ ga('send','event','PasDeRebond','Timer');},10000);
