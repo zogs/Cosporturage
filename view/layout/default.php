@@ -7,17 +7,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <!-- 
-    888       888                 .d8888b.                            888         .d888             
-    888   o   888                d88P  Y88b                           888        d88P"              
-    888  d8b  888                Y88b.                                888        888                
-    888 d888b 888  .d88b.         "Y888b.   88888b.   .d88b.  888d888 888888     888888 888d888 
-    888d88888b888 d8P  Y8b           "Y88b. 888 "88b d88""88b 888P"   888        888    888P"   
-    88888P Y88888 88888888 888888      "888 888  888 888  888 888     888        888    888         
-    8888P   Y8888 Y8b.           Y88b  d88P 888 d88P Y88..88P 888     Y88b.  d8b 888    888     
-    888P     Y888  "Y8888         "Y8888P"  88888P"   "Y88P"  888      "Y888 Y8P 888    888     
-                                            888                                                     
-                                            888                                                     
-                                            888                                                     
+     ,gggg,                                                                                                                                                     
+   ,88"""Y8b,                                                              I8                                                                 ,dPYb,            
+  d8"     `Y8                                                              I8                                                                 IP'`Yb            
+ d8'   8b  d8                                                           88888888                                                              I8  8I            
+,8I    "Y88P'                                                              I8                                                                 I8  8'            
+I8'             ,ggggg,      ,g,     gg,gggg,      ,ggggg,     ,gggggg,    I8    gg      gg   ,gggggg,    ,gggg,gg    ,gggg,gg   ,ggg,        I8 dP    ,gggggg, 
+d8             dP"  "Y8ggg  ,8'8,    I8P"  "Yb    dP"  "Y8ggg  dP""""8I    I8    I8      8I   dP""""8I   dP"  "Y8I   dP"  "Y8I  i8" "8i       I8dP     dP""""8I 
+Y8,           i8'    ,8I   ,8'  Yb   I8'    ,8i  i8'    ,8I   ,8'    8I   ,I8,   I8,    ,8I  ,8'    8I  i8'    ,8I  i8'    ,8I  I8, ,8I       I8P     ,8'    8I 
+`Yba,,_____, ,d8,   ,d8'  ,8'_   8) ,I8 _  ,d8' ,d8,   ,d8'  ,dP     Y8, ,d88b, ,d8b,  ,d8b,,dP     Y8,,d8,   ,d8b,,d8,   ,d8I  `YbadP'  d8b ,d8b,_  ,dP     Y8,
+  `"Y8888888 P"Y8888P"    P' "YY8P8PPI8 YY88888PP"Y8888P"    8P      `Y888P""Y888P'"Y88P"`Y88P      `Y8P"Y8888P"`Y8P"Y8888P"888888P"Y888 Y8P PI8"88888P      `Y8
+                                     I8                                                                                   ,d8I'               I8 `8,            
+                                     I8                                                                                 ,dP'8I                I8  `8,           
+                                     I8                                                                                ,8"  8I                I8   8I           
+                                     I8                                                                                I8   8I                I8   8I           
+                                     I8                                                                                `8, ,8I                I8, ,8'           
+                                     I8                                                                                 `Y8P"                  "Y8P'            
+                                                                                                                                                                                                            
 
 -->
 <?php 
@@ -34,7 +40,7 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description"content="<?php echo (!empty($description_for_layout))? $description_for_layout : '';?>" />
 	<meta name="keywords" content="<?php echo (!empty($keywords_for_layout))? $keywords_for_layout : '';?>" />
-	<meta name="google-site-verification" content="SeofOTfUyHE48_yX-s-Q2BUdqWuTiXZiX9fSkdGgZ9w" />
+	<meta name="google-site-verification" content="ZD5t5L6EUWQBhmALVBDdcmeK4aPVngC1kSS6dQccFjc" />
 	<meta name="robots" content="index,follow" />
 
 	<?php 
