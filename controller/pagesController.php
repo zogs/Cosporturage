@@ -127,8 +127,8 @@ class PagesController extends Controller {
 							$d['sports_available_txt'] .= $s->name.', ';
 			}			
 			
-			$d['title_for_layout'] = "Cosporturage.fr - Le site pour faire du sport dans sa ville -";
-			$d['description_for_layout'] = "Cosporturage.fr est un agenda des activités sportives dans ta ville. Organisez et découvrez les gens, les associations, les professionels qui font du sport autour de chez vous ! ";
+			$d['title_for_layout'] = "Cosporturage.fr - Le site pour faire du sport dans ta ville !";
+			$d['description_for_layout'] = "Comme pour le covoiturage, CoSporturage.fr vous permet de poster vos activités sportives en ligne ou de découvrir celle des autres ! Un moyen de faire du sport facilement et sans prise de tête !";
 			$d['keywords_for_layout'] = "Cosporturage, Co-sporturage, Cosportage, Sport, Groupe, Ville, Activités sportives, Agenda, Calendrier, ".$d['sports_available_txt'];
 			
 			$this->set($d);
