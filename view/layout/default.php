@@ -102,8 +102,8 @@ if(isset($this->OpenGraphObject)) $openGraph = $this->OpenGraphObject;;
 						<li><a href="<?php echo Router::url('users/register');?>"><span class="mm-icon ws-icon-quill"></span> Inscription</a></li>
 					<?php endif; ?>						
 					
-						<li class="social-btn"><a target="_blank" rel="nofollow" title="Nous suivre sur Twitter" href="https://twitter.com/weSportfr"  ><img src="<?php echo Router::webroot('img/social_flatls_twitter.png');?>" alt="Twitter"/>  Twitter</a></li>
-						<li class="social-btn"><a target="_blank" rel="nofollow" title="Notre page facebook" href="https://www.facebook.com/pages/We-sport/642996032385245" ><img src="<?php echo Router::webroot('img/social_flatls_facebook.png');?>" alt="Facebook"/>  Facebook</a></li>	
+						<li class="social-btn"><a target="_blank" rel="nofollow" title="Nous suivre sur Twitter" href="https://twitter.com/cosporturage_fr"  ><img src="<?php echo Router::webroot('img/social_flatls_twitter.png');?>" alt="Twitter"/>  Twitter</a></li>
+						<li class="social-btn"><a target="_blank" rel="nofollow" title="Notre page facebook" href="https://www.facebook.com/pages/coSporturage/642996032385245" ><img src="<?php echo Router::webroot('img/social_flatls_facebook.png');?>" alt="Facebook"/>  Facebook</a></li>	
 						
 					</ul>
 				</div>					
