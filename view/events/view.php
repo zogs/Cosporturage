@@ -15,7 +15,7 @@
 						</div>
 						<h1 class="event-title <?php echo (strlen($event->getTitle())<30)? 'title-big' : '';?>">
 							<?php echo $event->getTitle();?>
-							<br/><div class="fb-like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" </div>
+							<br/><div class="fb-share-button" data-type="button"></div>
 						</h1>
 						
 						<div style="display:inline-block">
