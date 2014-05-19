@@ -171,7 +171,7 @@
 	    <small>Tu peux aussi étendre la recherche jusqu'à un rayon de 100km&nbsp;!</small>
 	</p>
     <a href='javascript:void(0);' class='btn tourbus-next fright btn-info' rel="nofollow">Suivant <span class="ws-icon ws-icon-arrow-right"></span></a>
-    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précedant</a>
+    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précédent</a>
   </li>
 
   <li data-el='#sportCheckboxs' data-orientation='top' data-left='17%' data-width='600' data-highlight="true">
@@ -181,7 +181,7 @@
     	<small>Par défaut tous les sports sont affichés !</small>
     </p>
    <a href='javascript:void(0);' class='btn tourbus-next fright btn-info' rel="nofollow">Suivant <span class="ws-icon ws-icon-arrow-right "></span></a>
-    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précedant</a>
+    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précédent</a>
   </li>
 
   <li data-el="#calendar-content" data-orientation="top" data-left='25%' data-width='550' data-align='left' data-highlight="true">
@@ -192,7 +192,7 @@
   	</p>
   
   	<a href='javascript:void(0);' class='btn tourbus-next fright btn-info' rel="nofollow">Suivant <span class="ws-icon ws-icon-arrow-right "></span></a>
-    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précedant</a>
+    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précédent</a>
   </li>
 
    <li data-el="#menu-createevent" data-orientation="bottom" data-width='400' data-align='center' data-highlight="true">
@@ -200,7 +200,7 @@
   	<p class='tabbed'><strong>Pas grave, tu peux poster la tienne en 2min&nbsp;!</strong></p>
 
   	<a href='javascript:void(0);' class='btn tourbus-next fright btn-info' rel="nofollow">Suivant <span class="ws-icon ws-icon-arrow-right "></span></a>
-    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précedant</a>
+    <a href="javascript:void(0);" class='btn tourbus-prev fright btn-link' rel="nofollow"><i class="icon icon-arrow-left"></i> Précédent</a>
   </li>
 
   <li data-el="#registerMenu" data-orientation="bottom" data-width='500' data-align="right" data-arrow='80%'>
