@@ -3,8 +3,16 @@ class EventsModel extends Model{
 
 	public $validates = array(
 		'title' => array(
-			'rule'    => 'notEmpty',
-			'message' => 'Vous devez préciser un titre'		
+			'rules'=>array(
+					array(
+						'rule'    => 'notEmpty',
+						'message' => 'Vous devez préciser un titre'	
+					),
+					array(
+						'rule' => 'strip_tags'
+					)
+				)
+				
 		),
 		'sport' => array(
 			"rules"=>array(
@@ -23,7 +31,10 @@ class EventsModel extends Model{
 				array(
 					'rule'=>'notEmpty',
 					'message'=>"Une adresse doit être renseigné"
-				)
+				),
+				array(
+					'rule' => 'strip_tags'
+				)				
 			)
 		),
 		'cityName' => array(
@@ -99,6 +110,13 @@ class EventsModel extends Model{
 					'rule'=>'([0-9]+)',
 					'message'=>"User_id doit être un nombre"
 				)
+			)
+		),
+		'description' => array(
+			'rules' => array(
+				array(
+					'rule' => 'strip_tags'
+					)
 			)
 		)
 

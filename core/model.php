@@ -671,6 +671,9 @@ public function validates($data, $rules = null, $field = null){
 						elseif($rule['rule']=='encodeHTML'){
 							$data->$field = String::htmlEncode($data->$field);							
 						}
+						elseif($rule['rule']=='strip_tags'){
+							$data->$field = strip_tags($data->$field);
+						}
 						elseif($rule['rule']=='file'){
 							continue;
 						}

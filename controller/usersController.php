@@ -1126,6 +1126,9 @@ class UsersController extends Controller{
     	$this->loadModel('Events');
     	$this->loadModel('Worlds');
 
+    	//check if id is numeruc
+	if(empty($uid) || !is_numeric($uid)) $this->e404("Cet utilisateur n'existe pas");
+
     	//find user
     	$user = $this->Users->findUsers(array('conditions'=>array('user_id'=>$uid)));
     	$user = $user[0];
