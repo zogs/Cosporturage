@@ -1289,7 +1289,8 @@ class EventsController extends Controller{
     	$nb_mail_sended = 0;
     	$nb_mail_silent = 0;
     	$nb_mail_error = 0;
-    	$mail_content = file_get_contents(ROOT.'/view/email/eventPastEventReminder.html');
+    	$mail_reminder = file_get_contents(ROOT.'/view/email/eventPastEventReminder.html');
+    	$mail_encouragement = file_get_contents(ROOT.'/view/email/eventPastEventEncouragement.html');
 
 
     	foreach ($sporters as $key => $sporter) {
@@ -1314,29 +1315,44 @@ class EventsController extends Controller{
     			continue;
     		}
 
-    		//jump out if the user is the organisator
-    		if($sporter->user_id==$sporter->event->user_id){    			
-    			$this->Events->mailReminderSended($sporter->id); //set the mailing to done
-    			continue;
-    		}
+    		
 
     		$nb_sporters++;
 
 
     		//emailing
-	    	$subject = 'Alors c\'était comment ?!';
+	    	$subject = 'Alors c\'était bien ??';
 	    	$eventLink = Conf::getSiteUrl()."/".$sporter->event->getUrl();
 	    	$userLink = Conf::getSiteUrl()."/users/view/".$sporter->user->getID().'/'.$sporter->user->getLogin();
-	    	$body = $mail_content;
+	    	$body = $mail_reminder;
 	    	$body = preg_replace("~{site}~i", Conf::$website, $body);
 	        $body = preg_replace("~{title}~i", $sporter->event->title, $body);
 	        $body = preg_replace("~{subject}~i", $subject, $body);
 	        $body = preg_replace("~{eventlink}~i", $eventLink, $body);
 
+
+	        //if its the organisator
+    		if($sporter->user_id==$sporter->event->user_id){    			
+
+    			//if there was no participants
+    			if($sporter->event->numParticipants == 0){
+    				$subject = 'Humm... Personne hein ?';
+			    	$body = $mail_encouragement;
+			    	$body = preg_replace("~{site}~i", Conf::$website, $body);
+			        $body = preg_replace("~{subject}~i", $subject, $body);
+			        $body = preg_replace("~{eventlink}~i", $eventLink, $body);
+    			}
+    			else {
+    				//skip this mail
+    				continue;    				
+    			}
+    		}
+
+    		//set the mailing as done
+    		$this->Events->mailReminderSended($sporter->id); 
 	        
 	        if($this->sendEmails($sporter->user->email,$subject,$body)){
-
-	        	$this->Events->mailReminderSended($sporter->id);
+	        	
 	        	$nb_mail_sended++;
 
 	        	//increment events particpants						
