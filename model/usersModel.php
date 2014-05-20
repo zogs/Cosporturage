@@ -86,7 +86,11 @@ class UsersModel extends Model{
 				)
 		),
 		'account_profil' => array(
-			
+			'descr' => array(
+				'rules' => array(
+					'rule' => 'strip_tags'
+				)
+			)
 		),
 		'recovery_mdp' => array(
 			'password' => array(
