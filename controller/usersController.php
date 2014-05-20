@@ -563,37 +563,44 @@ class UsersController extends Controller{
 	    			if($this->Users->validates($data,'account_info')){
 
 						$user = $this->Users->findFirstUser(array('fields'=>'login, email','conditions'=>array('user_id'=>$this->request->post('user_id'))));
-							
+						$exist = false;	
 
 						if($user->login!=$data->login){
-							$check = $this->Users->findFirstUser(array('fields'=>'login','conditions'=>array('login'=>$data->login)));
+							$check = $this->Users->findFirstUser(array('fields'=>'login, user_id','conditions'=>array('login'=>$data->login)));
+														
 							if($check->exist()) {
+								$exist = true;
 								unset($data->login);
-								$this->session->setFlash('Ce pseudo est déjà utilisé');
+								$this->session->setFlash('Ce pseudo est déjà utilisé','warning');															
 							}
 						}
 
 						if($user->email!=$data->email){
-							$check = $this->Users->findFirstUser(array('fields'=>'email','conditions'=>array('email'=>$data->email)));
+							$check = $this->Users->findFirstUser(array('fields'=>'email, user_id','conditions'=>array('email'=>$data->email)));
 							if($check->exist()){
+								$exist = true;
 								unset($data->email);
-								$this->session->setFlash('Cet email est déjà utilisé dans notre système.');
+								$this->session->setFlash('Cet email est déjà utilisé dans notre système.','warning');
 							}
 						}
-					
-    					if($this->Users->saveUser($data,$user_id)){
 
-							$this->session->setFlash("Votre compte a été changé !","success");
 
-							//update session login									
-							$user = $this->session->user();
-	    					if(isset($data->login)) $user->login = $data->login;
-	    					if(isset($data->lang)) $user->lang = $data->lang;			    					
-	    					$this->session->write('user', $user);
+    					if($exist != true){
+
+    						if($this->Users->saveUser($data,$user_id)){
+
+								$this->session->setFlash("Votre compte a été changé !","success");
+
+								//update session login									
+								$user = $this->session->user();
+		    					if(isset($data->login)) $user->login = $data->login;
+		    					if(isset($data->lang)) $user->lang = $data->lang;			    					
+		    					$this->session->write('user', $user);
 	    					
-						}
-						else{
-							$this->session->setFlash("Error while saving your data, please retry","error");
+							}
+							else{
+								$this->session->setFlash("Error while saving your data, please retry","error");
+							}
 						}
 							
 	    			}
