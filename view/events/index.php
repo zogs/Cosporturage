@@ -67,7 +67,7 @@
 										<?php endif;?>
 										<?php if(isset($event->UserParticipation)): ?><span class="label ws-label ws-label-important ws-label-participe tooltipbottom" data-toggle="tooltip" title="Je participe"><i class="icon icon-white icon-thumbs-up"></i></span><?php endif; ?>
 										<?php if($event->author->isAsso()): ?><span class="label ws-label ws-label-grey tooltipbottom" data-toggle="tooltip" title="Association"><i>A</i></span><?php endif;?>
-										<?php if($event->author->isPro()): ?><span class="label ws-label ws-label-grey tooltipbottom" data-toogle="tooltip" title="Bizness"><i>P</i></span><?php endif;?>																							
+										<?php if($event->author->isPro()): ?><span class="label ws-label ws-label-grey tooltipbottom" data-toogle="tooltip" title="Professionnel"><i>P</i></span><?php endif;?>																							
 									</div>
 									<div class="events-city"><?php echo $event->getCityName();?></div>
 								</div>
