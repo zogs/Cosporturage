@@ -525,7 +525,7 @@ class User {
 
 		if(!empty($this->account)){
 			if($this->account=='asso') return 'Association';
-			if($this->account=='bizness') return 'Professionnel';
+			if($this->account=='pro') return 'Professionnel';
 		}
 		if(!empty($this->birthdate))
 			return date('Y-m-d') - date($this->birthdate). ' ans';		
