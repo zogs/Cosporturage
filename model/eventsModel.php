@@ -1207,6 +1207,7 @@ class Event{
 	}
 	public function getDescription(){
 
+		$this->description = preg_replace('/(<br\s*\/?>\s*)+/','<br />',$this->description);
 		return $this->description;
 	}
 
