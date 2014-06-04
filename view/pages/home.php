@@ -707,7 +707,7 @@ $(document).ready(function(){
 
 		if(_nbDays!=0) return _nbDays;
 		//Nombre de jour à afficher en fonction de la largeur de l'écran
-		var dayPerWeek = {320:1,480:2,768:3,1024:4,1280:5,1440:6,10000:7};
+		var dayPerWeek = {320:1,480:2,768:3,1024:6,1280:7,1440:7,10000:7};
 
 		for(var maxwidth in dayPerWeek){	
 			if(_screenWidth<=maxwidth) {
