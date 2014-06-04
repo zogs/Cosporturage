@@ -1196,8 +1196,8 @@ class Event{
 		return false;
 	}
 
-	public function isASerie(){
-		if($this->serie_id!=0) return true;
+	public function isASerie(){		
+		if(isset($this->serie_id) && $this->serie_id != 0) return true;
 		return false;
 	}
 
